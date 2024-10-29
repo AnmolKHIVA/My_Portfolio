@@ -1,0 +1,136 @@
+
+/* src/Terminal.css */
+.terminal-container {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  width: 90%;
+  height: 60vh;
+  border: 1px solid #ffffff; /* White border */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow */
+  margin: 20px auto; /* Center horizontally with margin */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 455vh;
+  margin-left: 6vw;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px 10px;
+  border-bottom: 1px solid #444;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(42, 255, 177); /* Title color */
+}
+
+.terminal-body {
+  padding: 10px;
+  height: 100%;
+  overflow-y: auto;
+  color: #ffffff; /* Default text color */
+}
+
+.terminal-log {
+  margin-bottom: 5px;
+}
+
+.terminal-log-line {
+  margin-bottom: 5px;
+}
+
+.terminal-welcome {
+  color: #95ccfd; /* Welcome message color */
+}
+
+.terminal-input-log {
+  color: rgb(42, 255, 177); /* User input color */
+}
+/* 
+.terminal-command {
+  color: rgb(42, 255, 177); 
+} */
+
+.terminal-general {
+  color: #95ccfd; /* General log color */
+}
+
+.terminal-error {
+  color: #ff5f56; /* Error message color */
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* $ himanshumehta >> color */
+}
+
+.terminal-input span {
+  margin-right: 5px;
+}
+
+.terminal-input input {
+  background: none;
+  border: none;
+  color: rgb(42, 255, 177); /* User input color */
+  outline: none;
+  flex-grow: 1;
+}
+
+.terminal-input input::placeholder {
+  color: #555;
+}
+
+.greenish {
+  color: rgb(42, 255, 177);
+}
+@media (max-width:994px){
+  .terminal-container{
+    margin-top: 510vh;
+  }
+}
+@media (max-width: 600px) {
+  .terminal-container{
+    margin-top: 515vh;
+  }
+  .terminal-container {
+    /* height: auto; */
+    max-height: 50vh;
+  }
+
+  .terminal-body {
+    max-height: 50vh;
+  }
+}

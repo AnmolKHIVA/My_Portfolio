@@ -1,0 +1,102 @@
+/* Basic styles for the navbar */
+.pos{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #0e1630;
+    padding: 2.2vh 20px;
+    color: #fff;
+    /* position: sticky; */
+    /* font-family: Arial, sans-serif; */
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 5vw;
+  }
+
+  .navbar-brand .colo{
+    color: rgb(42, 255, 177);
+  }
+  .navbar-brand .colo2{
+    color: white
+  }
+
+  .contain{
+    /* margin-right: ; */
+    margin-left: 30vw;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.9rem;
+    cursor: pointer;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    color: #95ccfd;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: rgb(42, 255, 177);
+  }
+
+
+  .separator {
+    color: #95ccfd;
+    font-size: 1.5rem;
+  }
+  
+  .social-icon {
+    color: #95ccfd;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  
+  .social-icon:hover {
+    color: rgb(42, 255, 177);
+  }
+
+  
+  /* Responsive styles */
+  @media (max-width: 1457px) {
+    .menu-toggle {
+      display: none;
+      margin-left: 20vw;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #0e1630;
+      padding: 20px;
+      /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  }
+  
+  
